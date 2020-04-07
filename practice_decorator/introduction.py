@@ -5,7 +5,9 @@ __author__ = 'TQ'
 def outer(func):
     def inner():
         print("log")
-        return func()
+        ret = func()
+        print("after")
+        return ret
     return inner
 
 
