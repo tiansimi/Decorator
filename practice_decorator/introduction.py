@@ -6,7 +6,6 @@ def outer(func):
     def inner():
         print("log")
         return func()
-
     return inner
 
 
